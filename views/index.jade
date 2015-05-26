@@ -1,0 +1,82 @@
+﻿extends layout
+
+block content
+    h3 SoundManager 2: Bar UI
+    h4 Extra controls inline
+    .sm2-bar-ui
+        .bd.sm2-main-controls
+            .sm2-inline-texture
+            .sm2-inline-gradient
+            .sm2-inline-element.sm2-button-element
+                .sm2-button-bd
+                   a(href="#play" class="sm2-inline-button play-pause") Play / pause
+            .sm2-inline-element.sm2-inline-status
+                .sm2-playlist
+                    .sm2-playlist-target
+                    //
+                        playlist <ul> + <li> markup will be injected here
+                        if you want default / non-JS content, you can put that here.
+                    noscript
+                        p JavaScript is required
+                .sm2-progress
+                    .sm2-row
+                        .sm2-inline-time 0:00
+                        .sm2-progress-bd
+                            .sm2-progress-track
+                                .sm2-progress-bar
+                                .sm2-progress-ball
+                                    .icon-overlay
+                        .sm2-inline-duration 0:00
+            .sm2-inline-element.sm2-button-element.sm2-volume
+                .sm2-button-bd
+                    span(class="sm2-inline-button sm2-volume-control volume-shade")
+                    a(href="#volume" class="sm2-inline-button sm2-volume-control") volume
+            .sm2-inline-element.sm2-button-element
+                .sm2-button-bd
+                    a(href="#prev" title="Previous" class="sm2-inline-button previous") &lt; previous
+            .sm2-inline-element.sm2-button-element
+                .sm2-button-bd
+                    a(href="#next" title="Next" class="sm2-inline-button next") &gt; next
+            .sm2-inline-element.sm2-button-element.sm2-menu
+                .sm2-button-bd
+                    a(href="#menu" class="sm2-inline-button menu") menu
+        .bd.sm2-playlist-drawer.sm2-element
+            .sm2-inline-texture
+                .sm2-box-shadow
+            .sm2-playlist-wrapper
+                ul(class="sm2-playlist-bd")
+                    li
+                        a(href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20Let%20Me%20%28Prod%202oolman%29.mp3") 
+                            b SonReal 
+                            | - Let Me
+                    li
+                        a(href="http://freshly-ground.com/data/audio/sm2/SonReal%20-%20LA%20%28Prod%20Chin%20Injetti%29.mp3")
+                            b SonReal 
+                            | - LA (Prod. Chin Injetti)
+                    li
+                        a(href="/audio/Skyways%20-%20Over%20and%20Over.mp3")
+                            b Skyways 
+                            | - Over and Over
+            .sm2-extra-controls
+                .bd
+                    .sm2-inline-element.sm2-button-element
+                        a(href="#prev" title="Previous" class="sm2-inline-button previous") &lt; previous
+                    .sm2-inline-element.sm2-button-element
+                        a(href="#next" title="Next" class="sm2-inline-button next") &gt; next
+
+
+    //
+        script.
+            soundManager.setup({
+              url: '/soundmanager/swf/',
+              onready: function() {
+                var mySound = soundManager.createSound({
+                  id: 'aSound',
+                  url: '/audio/Blackbird - Ups & downs.mp3'
+                });
+                mySound.play();
+              },
+              ontimeout: function() {
+                // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+              }
+            });

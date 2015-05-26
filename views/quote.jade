@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  #wrap
+    .container
+        .row
+            h2 #{title}
+            br
+            p These charts use the D3.js visualization library to display the daily closing price and sales volume of a stock.  When a company is selected in the dropdown, the data for that stock is fetched from Yahoo's Finance API using the Node.js 
+                a(href="https://www.npmjs.com/package/yahoo-finance", target="_blank") yahoo-finance 
+                | package.
+            br
+            #symbol-dropdown.dropdown
+                button(class="btn btn-default", data-toggle="dropdown", id="symbol-button")
+                    span Amazon (AMZN) 
+                    span.caret
+                ul(class="dropdown-menu", role="menu", aria-labelledby="dropdownMenu1", id="symbol-ul")
+                    li(data-value="amzn")
+                        a(href="#").
+                            Amazon (AMZN)
+                    li(data-value="aapl")
+                        a(href="#").
+                            Apple Inc. (AAPL)
+                    li(data-value="amat")
+                        a(href="#").
+                            Applied Materials (AMAT)
+                    li(data-value="csco")
+                        a(href="#").
+                            Cisco Systems (CSCO)
+                    li(data-value="fb")
+                        a(href="#").
+                            Facebook (FB)
+                    li(data-value="intc")
+                        a(href="#").
+                            Intel (INTC)
+                    li(data-value="mu")
+                        a(href="#").
+                            Micron Technology (MU)
+                    li(data-value="msft")
+                        a(href="#").
+                            Microsoft (MSFT)
+                    li(data-value="qqq")
+                        a(href="#").
+                            PowerShares QQQ Trust (QQQ)
+                    li(data-value="sndk")
+                        a(href="#").
+                            SanDisk (SNDK)
+            //br
+            //#symbol.cols-md-3 Amazon
+            br
+            h3 Adjusted Closing Price
+            #line-chart-price
+            br
+            h3 Daily Trade Volume
+            #line-chart-volume
+    #push
+  .footer
+      p
+      | &copy; #{year} - Seth Isernhagen
+
+block scripts
+    script(src='/javascripts/symbol_dropdown.js')
+    script(src='http://d3js.org/d3.v3.min.js')
+    script(src='/javascripts/d3_line_chart.js')

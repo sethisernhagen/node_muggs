@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>node_muggs</Name>
+    <RootNamespace>node_personal</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>192eb5b1-271d-42a2-b3de-723d1171f455</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\javascripts\bubble_chart.js" />
+    <Compile Include="public\javascripts\d3_bubbles.js" />
+    <Compile Include="public\javascripts\d3_tip.js" />
+    <Compile Include="public\javascripts\soundmanager2-jsmin.js" />
+    <Compile Include="public\javascripts\symbol_dropdown.js" />
+    <Compile Include="public\javascripts\d3_line_chart.js" />
+    <Compile Include="public\javascripts\user_bubble_chart.js" />
+    <Compile Include="public\soundmanager\script\bar-ui.js" />
+    <Compile Include="public\soundmanager\script\soundmanager2-jsmin.js" />
+    <Compile Include="public\soundmanager\script\soundmanager2-nodebug-jsmin.js" />
+    <Compile Include="public\soundmanager\script\soundmanager2-nodebug.js" />
+    <Compile Include="public\soundmanager\script\soundmanager2.js" />
+    <Compile Include="routes\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\audio\Blackbird - Ups &amp; downs.mp3" />
+    <Content Include="public\audio\Purling Kiss - I don%27t want to be a.mp3" />
+    <Content Include="public\audio\Skyways - Over and Over.mp3" />
+    <Content Include="public\images\favicon.png" />
+    <Content Include="public\images\static_bubbles.png" />
+    <Content Include="public\images\static_bubbles2.png" />
+    <Content Include="public\javascripts\bootstrap.js" />
+    <Content Include="public\javascripts\bootstrap.min.js" />
+    <Content Include="public\javascripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="public\javascripts\jquery-1.10.2.js" />
+    <Content Include="public\javascripts\jquery-1.10.2.min.js" />
+    <Content Include="public\javascripts\jquery.validate-vsdoc.js" />
+    <Content Include="public\javascripts\jquery.validate.js" />
+    <Content Include="public\javascripts\jquery.validate.min.js" />
+    <Content Include="public\javascripts\jquery.validate.unobtrusive.js" />
+    <Content Include="public\javascripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="public\javascripts\modernizr-2.6.2.js" />
+    <Content Include="public\javascripts\respond.js" />
+    <Content Include="public\javascripts\respond.min.js" />
+    <Content Include="public\json\user_bubble_chart_users.json" />
+    <Content Include="public\javascripts\_references.js" />
+    <Content Include="package.json" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\javascripts\jquery-1.10.2.min.map" />
+    <Content Include="public\soundmanager\css\bar-ui.css" />
+    <Content Include="public\soundmanager\image\black-10.png" />
+    <Content Include="public\soundmanager\image\black-25.png" />
+    <Content Include="public\soundmanager\image\black-33.png" />
+    <Content Include="public\soundmanager\image\icomoon\credits.txt" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\arrow.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\cart.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\first.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\last.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\list.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\list2.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\loop.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\music.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\pause.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\play.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\shuffle.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\volume.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\arrow.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\cart.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\first.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\last.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\list.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\list2.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\loop.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\music.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\pause.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\play.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\shuffle.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\volume.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\arrow.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\cart.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\first.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\last.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\list.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\list2.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\loop.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\music.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\pause.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\play.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\shuffle.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\volume.png" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\arrow.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\cart.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\first.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\last.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\list.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\list2.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\loop.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\music.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\pause.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\play.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\shuffle.svg" />
+    <Content Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\volume.svg" />
+    <Content Include="public\soundmanager\image\icomoon\free-25px-000000\PNG\spinner.png" />
+    <Content Include="public\soundmanager\image\icomoon\free-25px-000000\SVG\spinner.svg" />
+    <Content Include="public\soundmanager\image\icomoon\free-25px-ffffff\PNG\spinner.png" />
+    <Content Include="public\soundmanager\image\icomoon\free-25px-ffffff\SVG\spinner.svg" />
+    <Content Include="public\soundmanager\image\patterns\credits.txt" />
+    <Content Include="public\soundmanager\image\patterns\pinstriped_suit_vertical.png" />
+    <Content Include="public\soundmanager\image\patterns\pool_table.png" />
+    <Content Include="public\soundmanager\image\patterns\rubber_grip.png" />
+    <Content Include="public\soundmanager\image\patterns\tasky_pattern.png" />
+    <Content Include="public\soundmanager\image\patterns\textured_paper.png" />
+    <Content Include="public\soundmanager\image\patterns\tweed.png" />
+    <Content Include="public\soundmanager\image\patterns\wood_pattern.png" />
+    <Content Include="public\soundmanager\image\patterns\wood_pattern_dark.png" />
+    <Content Include="public\soundmanager\image\patterns\woven.png" />
+    <Content Include="public\soundmanager\swf\soundmanager2.swf" />
+    <Content Include="public\soundmanager\swf\soundmanager2_debug.swf" />
+    <Content Include="public\soundmanager\swf\soundmanager2_flash9.swf" />
+    <Content Include="public\soundmanager\swf\soundmanager2_flash9_debug.swf" />
+    <Content Include="public\soundmanager\swf\soundmanager2_flash_xdomain.zip" />
+    <Content Include="public\stylesheets\bootstrap.css" />
+    <Content Include="public\stylesheets\bootstrap.min.css" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <Content Include="views\bubble_chart.jade" />
+    <Content Include="views\quote.jade" />
+    <Content Include="views\contact.jade" />
+    <Content Include="views\about.jade" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\audio\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\json\" />
+    <Folder Include="public\soundmanager\" />
+    <Folder Include="public\soundmanager\css\" />
+    <Folder Include="public\soundmanager\image\" />
+    <Folder Include="public\soundmanager\image\icomoon\" />
+    <Folder Include="public\soundmanager\image\icomoon\entypo-25px-000000\" />
+    <Folder Include="public\soundmanager\image\icomoon\entypo-25px-000000\PNG\" />
+    <Folder Include="public\soundmanager\image\icomoon\entypo-25px-000000\SVG\" />
+    <Folder Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\" />
+    <Folder Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\PNG\" />
+    <Folder Include="public\soundmanager\image\icomoon\entypo-25px-ffffff\SVG\" />
+    <Folder Include="public\soundmanager\image\icomoon\free-25px-000000\" />
+    <Folder Include="public\soundmanager\image\icomoon\free-25px-000000\PNG\" />
+    <Folder Include="public\soundmanager\image\icomoon\free-25px-000000\SVG\" />
+    <Folder Include="public\soundmanager\image\icomoon\free-25px-ffffff\" />
+    <Folder Include="public\soundmanager\image\icomoon\free-25px-ffffff\PNG\" />
+    <Folder Include="public\soundmanager\image\icomoon\free-25px-ffffff\SVG\" />
+    <Folder Include="public\soundmanager\image\patterns\" />
+    <Folder Include="public\soundmanager\script\" />
+    <Folder Include="public\soundmanager\swf\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
