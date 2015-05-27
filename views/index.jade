@@ -46,37 +46,28 @@ block content
             .sm2-playlist-wrapper
                 ul(class="sm2-playlist-bd")
                     li
-                        a(href="/audio/Blackbird%20-%20Ups%20&%20downs.mp3") 
-                            b Blackbird 
-                            | - Ups and Downs 
+                        a(href="/audio/01 Vanishing Point.mp3") 
+                            b Cranes 
+                            | - Vanishing Point 
                     li
-                        a(href="/audio/Purling Kiss%20-%20I%20don't%20want%20to%20be%20a.mp3")
-                            b Purling Kiss 
-                            | - Don't want to be a...
+                        a(href="/audio/A.R. Kane - 'i' - 02 - Love from Outer Space.mp3")
+                            b A.R. Kane 
+                            | - Love from Outer Space
                     li
-                        a(href="/audio/Skyways%20-%20Over%20and%20Over.mp3")
+                        a(href="/audio/Skyways - Over and Over.mp3")
                             b Skyways 
                             | - Over and Over
+                    li
+                        a(href="/audio/Ther Verlains - Pyromanic.mp3")
+                            b The Verlaines 
+                            | - Pyromanic
+                    li
+                        a(href="/audio/Purling Kiss - I don't want to be a.mp3")
+                            b Purling Kiss 
+                            | - Don't want to be a...
             .sm2-extra-controls
                 .bd
                     .sm2-inline-element.sm2-button-element
                         a(href="#prev" title="Previous" class="sm2-inline-button previous") &lt; previous
                     .sm2-inline-element.sm2-button-element
                         a(href="#next" title="Next" class="sm2-inline-button next") &gt; next
-
-
-    //
-        script.
-            soundManager.setup({
-              url: '/soundmanager/swf/',
-              onready: function() {
-                var mySound = soundManager.createSound({
-                  id: 'aSound',
-                  url: '/audio/Blackbird - Ups & downs.mp3'
-                });
-                mySound.play();
-              },
-              ontimeout: function() {
-                // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
-              }
-            });
